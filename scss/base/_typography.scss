@@ -1,0 +1,44 @@
+.navigation__link {
+    font-size: 1.6rem;
+}
+.main-article__heading {
+    font-weight: 800;
+    line-height: 0.9;
+    font-size: 4rem;
+    @media screen and (min-width: 640px) {
+        font-size: 5rem;
+    }
+    @media screen and (min-width: 800px) {
+        font-size: 6rem;
+    }
+}
+.main-article__paragraph {
+    font-size: 1.5rem;
+}
+.main-article__read-more-btn {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+.new-articles__heading {
+    font-weight: 700;
+    font-size: 4rem;
+}
+.new-article__link-title {
+    font-size: 1.8rem;
+}
+.new-article__paragraph {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.recommended-article__rank {
+    font-size: 3rem;
+}
+.recommended-article__link-title {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.recommended-article__paragraph {
+    font-size: 1.4rem;
+    line-height: 1.8;
+}

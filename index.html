@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/main.css">
+  <script src="./scripts/form-validation" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+
+  <main class="main-container">
+    <div class="credit-card-images-container">
+      <div class="image-container">
+        <img src="./images/bg-card-front.png" alt="A credit card front view">
+      </div>
+      <div class="image-container">
+        <img src="./images/bg-card-back.png" alt="A credit card back view">
+      </div>
+    </div>
+    <div class="form-container">
+      <form action="POST" class="credit-card-infos">
+        <h1 class="sr-only">Credit Card infos form</h1>
+        <div class="form-input-group">
+          <label for="cardholder-name">Cardholder Name</label>
+          <input type="text" name="cardholder-name" id="cardholder-name" placeholder="e.g. Jane Appleseed" />
+        </div>
+        <div class="form-input-group">
+          <label for="cardholder-name">Card Number</label>
+          <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" />
+        </div>
+        <div class="form-input-group">
+          <div class="form-input-group">
+            <label>Exp. Date (MM/YY)
+              <input type="month" name="expiry-date-month" id="expiry-date-month" min="1" max="12">
+              <input type="number" name="expiry-date-year" id="expiry-date-year" min="2024">
+            </label>
+          </div>
+          <div class="form-input-group">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" name="cvc" placeholder="e.g. 123">
+          </div>
+        </div>
+        <button type="submit" id="form-submit-btn">Confirm</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>
