@@ -431,6 +431,18 @@ h6 {
   width: 100%;
 }
 
+span.error {
+  display: none;
+  color: hsl(0, 100%, 66%);
+}
+span.error.active {
+  display: block;
+}
+
+input.error {
+  border: 1px solid hsl(0, 100%, 66%);
+}
+
 #form-submit-btn {
   background-color: black;
   color: hsl(270, 3%, 87%);

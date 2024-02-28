@@ -42,3 +42,13 @@
 .row-1 input {
     width: 100%;
 }
+span.error {
+    display: none;
+    color: $red;
+    &.active {
+        display: block;
+    }
+}
+input.error {
+    border: 1px solid $red;
+}
