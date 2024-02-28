@@ -1,0 +1,72 @@
+.credit-card-images-container {
+    background-image: url(../../images/bg-main-mobile.png);
+    @media screen and (min-width: 800px) {
+        background-image: url(../../images/bg-main-desktop.png);
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+    }
+    padding-inline: 2rem;
+}
+.credit-card-front-view,
+.credit-card-back-view {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 447px;
+
+    border-radius: 1rem;
+
+    position: relative;
+}
+.credit-card-front-view {
+    background-image: url(../../images/bg-card-front.png);
+    padding: 3rem;
+    @media screen and (min-width: 800px) {
+        left: 30%;
+    }
+    color: $light-grayish-violet;
+}
+.credit-card-back-view {
+    background-image: url(../../images/bg-card-back.png);
+    @media screen and (min-width: 800px) {
+        left: 50%;
+    }
+    color: $white;
+}
+.credit-card-front-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.credit-card-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+.card-number {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.card-logo-container {
+    max-width: 84px;
+}
+.card-holder-info span {
+    float: right;
+}
+
+.credit-card-back-view {
+    position: relative;
+}
+.CVV {
+    position: absolute;
+    top: 45%;
+    right: 12%;
+}

@@ -18,15 +18,26 @@
 
   <main class="main-container">
     <div class="credit-card-images-container">
-      <div class="image-container">
-        <img src="./images/bg-card-front.png" alt="A credit card front view">
+      <div class="credit-card-front-view">
+        <div class="card-logo-container">
+          <img src="./images/card-logo.svg" alt="">
+        </div>
+        <div class="credit-card-infos">
+          <div class="card-number">
+            <p>0000</p>
+            <p>0000</p>
+            <p>0000</p>
+            <p>0000</p>
+          </div>
+          <p class="card-holder-info">Jane Appleseed <span>00/00</span></p>
+        </div>
       </div>
-      <div class="image-container">
-        <img src="./images/bg-card-back.png" alt="A credit card back view">
+      <div class="credit-card-back-view">
+        <p class="CVV">000</p>
       </div>
     </div>
     <div class="form-container">
-      <form action="POST" class="credit-card-infos">
+      <form action="POST" class="credit-card-infos-input-form">
         <h1 class="sr-only">Credit Card infos form</h1>
         <div class="form-input-group">
           <label for="cardholder-name">Cardholder Name</label>
@@ -36,11 +47,14 @@
           <label for="cardholder-name">Card Number</label>
           <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" />
         </div>
-        <div class="form-input-group">
+        <div class="credit-cards-infos-row">
           <div class="form-input-group">
-            <label>Exp. Date (MM/YY)
-              <input type="month" name="expiry-date-month" id="expiry-date-month" min="1" max="12">
-              <input type="number" name="expiry-date-year" id="expiry-date-year" min="2024">
+            <label id="expiry-date">
+              <p class="expiry-date-text">Exp. Date (MM/YY)</p>
+              <div class="row-1">
+                <input type="number" name="expiry-date-month" id="expiry-date-month" placeholder="MM">
+                <input type="number" name="expiry-date-year" id="expiry-date-year" placeholder="YY">
+              </div>
             </label>
           </div>
           <div class="form-input-group">

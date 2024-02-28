@@ -1,0 +1,41 @@
+.credit-card-infos-input-form {
+    max-width: 44rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem;
+    @media screen and (min-width: 1600px) {
+        position: absolute;
+        left: 40rem;
+    }
+}
+.form-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-input-group label {
+    display: block;
+}
+.form-input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 1px solid $dark-grayish-violet;
+}
+.credit-cards-infos-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+.expiry-date-text {
+    margin-bottom: 1rem;
+}
+.row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+}
+.row-1 input {
+    width: 100%;
+}
