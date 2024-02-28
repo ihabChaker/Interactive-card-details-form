@@ -151,19 +151,47 @@ h6 {
 }
 
 .card-number > p {
-  font-size: 3rem;
+  --size-factor: 0.5;
+  font-size: calc(3rem * var(--size-factor));
   letter-spacing: 0.2rem;
+}
+@media screen and (min-width: 640px) {
+  .card-number > p {
+    --size-factor: 0.75;
+  }
+}
+@media screen and (min-width: 800px) {
+  .card-number > p {
+    --size-factor: 1;
+  }
 }
 
 .card-holder-info {
-  font-size: 1.3rem;
+  --size-factor: 0.55;
+  font-size: calc(1.3rem * var(--size-factor));
   text-transform: uppercase;
   letter-spacing: 0.25rem;
 }
+@media screen and (min-width: 640px) {
+  .card-holder-info {
+    --size-factor: 0.75;
+  }
+}
+@media screen and (min-width: 800px) {
+  .card-holder-info {
+    --size-factor: 1;
+  }
+}
 
 .CVV {
-  font-size: 1.4rem;
+  --size-factor: 0.65;
+  font-size: calc(1.4rem * var(--size-factor));
   letter-spacing: 0.25rem;
+}
+@media screen and (min-width: 800px) {
+  .CVV {
+    --size-factor: 1;
+  }
 }
 
 .credit-card-infos-input-form {
@@ -185,9 +213,21 @@ h6 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 6rem;
+}
+@media screen and (min-width: 640px) {
+  .main-container {
+    gap: 8rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main-container {
+    gap: 12rem;
+  }
 }
 @media screen and (min-width: 1300px) {
   .main-container {
+    gap: 2rem;
     flex-direction: row;
   }
 }
@@ -210,18 +250,21 @@ h6 {
   background-image: url(../../images/bg-main-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding-inline: 2rem;
+  padding-block: 4rem;
+  position: relative;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1300px) {
   .credit-card-images-container {
     background-image: url(../../images/bg-main-desktop.png);
   }
 }
 @media screen and (min-width: 1300px) {
   .credit-card-images-container {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 4rem;
   }
 }
@@ -231,28 +274,55 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 250px;
-  width: 447px;
+  --size-factor: 0.55;
+  height: calc(250px * var(--size-factor));
+  width: calc(447px * var(--size-factor));
   border-radius: 1rem;
   position: relative;
+}
+@media screen and (min-width: 640px) {
+  .credit-card-front-view,
+  .credit-card-back-view {
+    --size-factor: 0.75;
+  }
+}
+@media screen and (min-width: 800px) {
+  .credit-card-front-view,
+  .credit-card-back-view {
+    --size-factor: 1;
+  }
 }
 
 .credit-card-front-view {
   background-image: url(../../images/bg-card-front.png);
-  padding: 3rem;
+  padding: 1rem;
   color: hsl(270, 3%, 87%);
+  position: absolute;
+  transform: translateX(-20%) translateY(60%);
 }
 @media screen and (min-width: 800px) {
   .credit-card-front-view {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .credit-card-front-view {
     left: 30%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .credit-card-front-view {
+    transform: unset;
+    position: relative;
   }
 }
 
 .credit-card-back-view {
   background-image: url(../../images/bg-card-back.png);
+  left: 10%;
   color: hsl(0, 0%, 100%);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1300px) {
   .credit-card-back-view {
     left: 50%;
   }
@@ -262,6 +332,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .credit-card-infos {
@@ -277,7 +348,12 @@ h6 {
 }
 
 .card-logo-container {
-  max-width: 84px;
+  max-width: 63px;
+}
+@media screen and (min-width: 800px) {
+  .card-logo-container {
+    max-width: 84px;
+  }
 }
 
 .card-holder-info span {
@@ -290,8 +366,13 @@ h6 {
 
 .CVV {
   position: absolute;
-  top: 45%;
+  top: 44%;
   right: 12%;
+}
+@media screen and (min-width: 640px) {
+  .CVV {
+    top: 45%;
+  }
 }
 
 .credit-card-infos-input-form {
@@ -299,7 +380,12 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 1rem;
+  padding-inline: 2rem;
+}
+@media screen and (min-width: 5400px) {
+  .credit-card-infos-input-form {
+    padding-inline: 0;
+  }
 }
 @media screen and (min-width: 1600px) {
   .credit-card-infos-input-form {

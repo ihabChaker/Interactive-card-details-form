@@ -1,14 +1,32 @@
 .card-number > p {
-    font-size: 3rem;
+    --size-factor: 0.5;
+    @media screen and (min-width: 640px) {
+        --size-factor: 0.75;
+    }
+    @media screen and (min-width: 800px) {
+        --size-factor: 1;
+    }
+    font-size: calc(3rem * var(--size-factor));
     letter-spacing: 0.2rem;
 }
 .card-holder-info {
-    font-size: 1.3rem;
+    --size-factor: 0.55;
+    @media screen and (min-width: 640px) {
+        --size-factor: 0.75;
+    }
+    @media screen and (min-width: 800px) {
+        --size-factor: 1;
+    }
+    font-size: calc(1.3rem * var(--size-factor));
     text-transform: uppercase;
     letter-spacing: 0.25rem;
 }
 .CVV {
-    font-size: 1.4rem;
+    --size-factor: 0.65;
+    @media screen and (min-width: 800px) {
+        --size-factor: 1;
+    }
+    font-size: calc(1.4rem * var(--size-factor));
     letter-spacing: 0.25rem;
 }
 .credit-card-infos-input-form {
