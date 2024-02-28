@@ -16,14 +16,14 @@
     }
 }
 
-.form-container {
+.content-container {
     flex-grow: 1;
-    display: grid;
-    place-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media screen and (min-width: 1600px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         position: relative;
     }
 }
