@@ -37,17 +37,18 @@
       </div>
     </div>
     <div class="content-container">
-      <form action="POST" class="credit-card-infos-input-form" id="card-infos-form" style="display: none;">
+      <form action="POST" class="credit-card-infos-input-form" id="card-infos-form">
         <h1 class="sr-only">Credit Card infos form</h1>
         <div class="form-input-group">
           <label for="cardholder-name">Cardholder Name</label>
-          <input type="text" name="cardholder-name" id="cardholder-name" placeholder="e.g. Jane Appleseed" />
+          <input type="text" name="cardholder-name" id="cardholder-name" placeholder="e.g. Jane Appleseed"
+            aria-required="true" required />
           <span class="error">fsfds</span>
         </div>
         <div class="form-input-group">
           <label for="cardholder-name">Card Number</label>
-          <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000"
-            maxlength="19" />
+          <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19"
+            aria-required="true" required />
           <span class="error"></span>
         </div>
         <div class="credit-cards-infos-row">
@@ -55,14 +56,17 @@
             <label id="expiry-date">
               <p class="expiry-date-text">Exp. Date (MM/YY)</p>
               <div class="row-1">
-                <input type="number" name="expiry-date-month" id="expiry-date-month" placeholder="MM">
-                <input type="number" name="expiry-date-year" id="expiry-date-year" placeholder="YY">
+                <input type="number" name="expiry-date-month" id="expiry-date-month" placeholder="MM"
+                  aria-required="true" required>
+                <input type="number" name="expiry-date-year" id="expiry-date-year" placeholder="YY" aria-required="true"
+                  required>
               </div>
             </label>
           </div>
           <div class="form-input-group">
             <label for="cvc">CVC</label>
-            <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" minlength="3" maxlength="3">
+            <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" minlength="3" maxlength="3"
+              aria-required="true" required>
             <span class="error"></span>
           </div>
           <div class=""><span class="error" id="expiry-date-error"></span></div>
@@ -70,7 +74,7 @@
         </div>
         <button type="submit" id="form-submit-btn">Confirm</button>
       </form>
-      <div class="thank-you">
+      <div class="thank-you" id="thank-you">
         <h1 class="sr-only">A form submission success message </h1>
         <div class="thank-you__icon-container">
           <img src="./images/icon-complete.svg" alt="A complete icon">

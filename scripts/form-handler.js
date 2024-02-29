@@ -122,7 +122,11 @@ form.addEventListener("submit", (event) => {
         cardHolderInfos.innerText = cardHolder
         cardHolderInfos.appendChild(span)
 
+        CVVContainer.innerText = cvc.value
+
         form.style.display = 'none'
+        const thankYou = document.getElementById('thank-you')
+        thankYou.classList.add('active')
     }
 });
 

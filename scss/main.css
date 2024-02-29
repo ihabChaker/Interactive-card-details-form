@@ -459,10 +459,17 @@ input.error {
 .thank-you {
   min-width: 30rem;
   max-width: 35rem;
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  display: none;
+}
+.thank-you.active {
+  display: flex;
+}
+
+.thank-you__icon-container {
+  max-width: 70px;
 }
 
 .thank-you__text-content {
