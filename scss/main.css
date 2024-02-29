@@ -279,7 +279,7 @@ h6 {
 }
 
 .credit-card-images-container {
-  background-image: url(/images/bg-main-mobile.png);
+  background-image: url(../../images/bg-main-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -292,7 +292,7 @@ h6 {
 
 @media screen and (min-width: 1300px) {
   .credit-card-images-container {
-    background-image: url(/images/bg-main-desktop.png);
+    background-image: url(../../images/bg-main-desktop.png);
   }
 }
 
@@ -332,7 +332,7 @@ h6 {
 }
 
 .credit-card-front-view {
-  background-image: url(/images/bg-card-front.png);
+  background-image: url(../../images/bg-card-front.png);
   padding: 1rem;
   color: hsl(270, 3%, 87%);
   position: absolute;
@@ -359,7 +359,7 @@ h6 {
 }
 
 .credit-card-back-view {
-  background-image: url(/images/bg-card-back.png);
+  background-image: url(../../images/bg-card-back.png);
   left: 10%;
   color: hsl(0, 0%, 100%);
 }
