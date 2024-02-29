@@ -69,11 +69,13 @@ h6 {
   padding-top: 1rem;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 640px) {
   .wrapper {
     padding-top: 2rem;
   }
 }
+
 @media screen and (min-width: 800px) {
   .wrapper {
     padding: 0;
@@ -89,16 +91,19 @@ h6 {
   column-gap: 3rem;
   margin-top: 2rem;
 }
+
 @media screen and (min-width: 640px) {
   .main-grid-layout {
     margin-top: 3rem;
   }
 }
+
 @media screen and (min-width: 800px) {
   .main-grid-layout {
     margin-top: 4rem;
   }
 }
+
 @media screen and (min-width: 1100px) {
   .main-grid-layout {
     grid-template-areas: "main main aside" "recommendations recommendations recommendations";
@@ -112,11 +117,13 @@ h6 {
   padding-top: 1rem;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 640px) {
   .wrapper {
     padding-top: 2rem;
   }
 }
+
 @media screen and (min-width: 800px) {
   .wrapper {
     padding: 0;
@@ -132,16 +139,19 @@ h6 {
   column-gap: 3rem;
   margin-top: 2rem;
 }
+
 @media screen and (min-width: 640px) {
   .main-grid-layout {
     margin-top: 3rem;
   }
 }
+
 @media screen and (min-width: 800px) {
   .main-grid-layout {
     margin-top: 4rem;
   }
 }
+
 @media screen and (min-width: 1100px) {
   .main-grid-layout {
     grid-template-areas: "main main aside" "recommendations recommendations recommendations";
@@ -150,18 +160,20 @@ h6 {
   }
 }
 
-.card-number > p {
+.card-number>p {
   --size-factor: 0.5;
   font-size: calc(3rem * var(--size-factor));
   letter-spacing: 0.2rem;
 }
+
 @media screen and (min-width: 640px) {
-  .card-number > p {
+  .card-number>p {
     --size-factor: 0.75;
   }
 }
+
 @media screen and (min-width: 800px) {
-  .card-number > p {
+  .card-number>p {
     --size-factor: 1;
   }
 }
@@ -172,11 +184,13 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.25rem;
 }
+
 @media screen and (min-width: 640px) {
   .card-holder-info {
     --size-factor: 0.75;
   }
 }
+
 @media screen and (min-width: 800px) {
   .card-holder-info {
     --size-factor: 1;
@@ -188,6 +202,7 @@ h6 {
   font-size: calc(1.4rem * var(--size-factor));
   letter-spacing: 0.25rem;
 }
+
 @media screen and (min-width: 800px) {
   .CVV {
     --size-factor: 1;
@@ -229,16 +244,19 @@ h6 {
   flex-direction: column;
   gap: 6rem;
 }
+
 @media screen and (min-width: 640px) {
   .main-container {
     gap: 8rem;
   }
 }
+
 @media screen and (min-width: 800px) {
   .main-container {
     gap: 12rem;
   }
 }
+
 @media screen and (min-width: 1300px) {
   .main-container {
     gap: 2rem;
@@ -253,6 +271,7 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (min-width: 1600px) {
   .content-container {
     position: relative;
@@ -260,7 +279,7 @@ h6 {
 }
 
 .credit-card-images-container {
-  background-image: url(../../images/bg-main-mobile.png);
+  background-image: url(/images/bg-main-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -270,11 +289,13 @@ h6 {
   padding-block: 4rem;
   position: relative;
 }
+
 @media screen and (min-width: 1300px) {
   .credit-card-images-container {
-    background-image: url(../../images/bg-main-desktop.png);
+    background-image: url(/images/bg-main-desktop.png);
   }
 }
+
 @media screen and (min-width: 1300px) {
   .credit-card-images-container {
     flex-direction: column;
@@ -293,13 +314,17 @@ h6 {
   border-radius: 1rem;
   position: relative;
 }
+
 @media screen and (min-width: 640px) {
+
   .credit-card-front-view,
   .credit-card-back-view {
     --size-factor: 0.75;
   }
 }
+
 @media screen and (min-width: 800px) {
+
   .credit-card-front-view,
   .credit-card-back-view {
     --size-factor: 1;
@@ -307,22 +332,25 @@ h6 {
 }
 
 .credit-card-front-view {
-  background-image: url(../../images/bg-card-front.png);
+  background-image: url(/images/bg-card-front.png);
   padding: 1rem;
   color: hsl(270, 3%, 87%);
   position: absolute;
   transform: translateX(-20%) translateY(60%);
 }
+
 @media screen and (min-width: 800px) {
   .credit-card-front-view {
     padding: 3rem;
   }
 }
+
 @media screen and (min-width: 1300px) {
   .credit-card-front-view {
     left: 30%;
   }
 }
+
 @media screen and (min-width: 1300px) {
   .credit-card-front-view {
     transform: unset;
@@ -331,10 +359,11 @@ h6 {
 }
 
 .credit-card-back-view {
-  background-image: url(../../images/bg-card-back.png);
+  background-image: url(/images/bg-card-back.png);
   left: 10%;
   color: hsl(0, 0%, 100%);
 }
+
 @media screen and (min-width: 1300px) {
   .credit-card-back-view {
     left: 50%;
@@ -363,6 +392,7 @@ h6 {
 .card-logo-container {
   max-width: 63px;
 }
+
 @media screen and (min-width: 800px) {
   .card-logo-container {
     max-width: 84px;
@@ -382,6 +412,7 @@ h6 {
   top: 44%;
   right: 12%;
 }
+
 @media screen and (min-width: 640px) {
   .CVV {
     top: 45%;
@@ -395,11 +426,13 @@ h6 {
   gap: 4rem;
   padding-inline: 2rem;
 }
+
 @media screen and (min-width: 5400px) {
   .credit-card-infos-input-form {
     padding-inline: 0;
   }
 }
+
 @media screen and (min-width: 1600px) {
   .credit-card-infos-input-form {
     position: absolute;
@@ -448,6 +481,7 @@ span.error {
   display: none;
   color: hsl(0, 100%, 66%);
 }
+
 span.error.active {
   display: block;
 }
@@ -464,6 +498,7 @@ input.error {
   gap: 3rem;
   display: none;
 }
+
 .thank-you.active {
   display: flex;
 }
