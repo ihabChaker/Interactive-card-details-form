@@ -23,17 +23,17 @@
           <img src="./images/card-logo.svg" alt="">
         </div>
         <div class="credit-card-infos">
-          <div class="card-number">
+          <div class="card-number" id="user-card-number">
             <p>0000</p>
             <p>0000</p>
             <p>0000</p>
             <p>0000</p>
           </div>
-          <p class="card-holder-info">Jane Appleseed <span>00/00</span></p>
+          <p class="card-holder-info" id="user-card-holder-info">Jane Appleseed <span>00/00</span></p>
         </div>
       </div>
       <div class="credit-card-back-view">
-        <p class="CVV">000</p>
+        <p class="CVV" id="CVV">000</p>
       </div>
     </div>
     <div class="content-container">
@@ -70,7 +70,17 @@
         </div>
         <button type="submit" id="form-submit-btn">Confirm</button>
       </form>
-      <div class="thank-you"></div>
+      <div class="thank-you">
+        <h1 class="sr-only">A form submission success message </h1>
+        <div class="thank-you__icon-container">
+          <img src="./images/icon-complete.svg" alt="A complete icon">
+        </div>
+        <div class="thank-you__text-content">
+          <h1 class="thank-you__heading">Thank you!</h1>
+          <p class="thank-you__paragraph">We've added your card details</p>
+        </div>
+        <button class="thank-you__continue">Continue</button>
+      </div>
     </div>
   </main>
 

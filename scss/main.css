@@ -208,6 +208,20 @@ h6 {
   font-size: 1.8rem;
 }
 
+.thank-you__heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.36rem;
+}
+
+.thank-you__paragraph {
+  font-size: 1.8rem;
+}
+
+.thank-you__continue {
+  font-size: 1.6rem;
+}
+
 .main-container {
   height: 100%;
   width: 100%;
@@ -442,9 +456,38 @@ input.error {
   border: 1px solid hsl(0, 100%, 66%);
 }
 
+.thank-you {
+  min-width: 30rem;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.thank-you__text-content {
+  text-align: center;
+}
+
+.thank-you__heading {
+  margin-bottom: 2rem;
+}
+
+.thank-you__paragraph {
+  color: hsl(279, 6%, 55%);
+}
+
 #form-submit-btn {
   background-color: black;
   color: hsl(270, 3%, 87%);
+  padding-block: 10px;
+  border-radius: 0.5rem;
+}
+
+.thank-you__continue {
+  width: 100%;
+  background-color: black;
+  color: hsl(0, 0%, 100%);
   padding-block: 10px;
   border-radius: 0.5rem;
 }

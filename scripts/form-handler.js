@@ -101,6 +101,28 @@ form.addEventListener("submit", (event) => {
     }
 
     if (isValid) {
-        alert("The form is valid!");
+        const cardNumberContainer = document.getElementById('user-card-number')
+        const cardHolderInfos = document.getElementById('user-card-holder-info')
+        const CVVContainer = document.getElementById('CVV')
+
+        const nums = cardNumber.value.split(' ')
+        cardNumberContainer.innerHTML = ''
+        nums.forEach((num) => {
+            let p = document.createElement('p')
+            p.innerText = num
+            cardNumberContainer.appendChild(p)
+        })
+
+        const cardHolder = cardholderName.value
+        const expiryDate = expiryDateMonth.value + '/' + expiryDateYear.value
+
+        const span = document.createElement('span')
+        span.innerText = expiryDate
+        cardHolderInfos.innerHTML = ''
+        cardHolderInfos.innerText = cardHolder
+        cardHolderInfos.appendChild(span)
+
+        form.style.display = 'none'
     }
 });
+
